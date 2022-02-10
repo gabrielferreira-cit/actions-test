@@ -29,7 +29,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - run: pwd
-    - run: ls
+    - run: ls -la
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
       with:
