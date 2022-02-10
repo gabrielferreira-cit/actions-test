@@ -28,10 +28,5 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-    - run: pwd
+    - run: doiajsd
     - run: ls -la .github/actions/app
-    - name: Build with Gradle
-      uses: gradle/gradle-build-action@v2
-      with:
-        arguments: build
-        build-root-directory: .github/actions/app
